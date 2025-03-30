@@ -1,0 +1,225 @@
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+html,
+body {
+  height: 100%; /* Asegura que html y body tengan altura */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bg {
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url("https://oficinavirtual.fiducoomeva.com/fiducoomevaInversiones/imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Asegura que ocupe todo el alto */
+    position: relative; /* Importante para el scroll */
+    
+}
+
+.scroll-container {
+    overflow-y: auto; /*  Habilita el scroll en este contenedor */
+    height: 100vh; /*  Asegura que el contenedor ocupe todo el viewport */
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    top: 30vh; /* Posiciona el formulario verticalmente */
+    padding-bottom: 20px;
+    
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1.2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 0;
+    background-color: white; /* Establece el fondo blanco */
+}
+
+.encabezado {
+    background-color: #B12923;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    line-height: 1.25rem;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.encabezado h2 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Estilos para la sección explicativa */
+.seccion-explicativa {
+    background-color: white;
+    color: #555;
+    padding: 1em;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.seccion-explicativa p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+/* Nueva sección para los campos */
+.seccion-campos {
+    background-color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+.campo {
+      display: flex;
+    align-items: center; /* Centra verticalmente */
+    padding-bottom: 1em;
+}
+
+.campo label {
+    width: 180px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.campo input {
+    width: 72%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.campo select {
+ 
+    height: 1.6em; 
+
+}
+
+#anio {
+    padding: 0px;
+    border: 0.5px solid #555;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 72%;
+}
+
+.campo-send {
+    display: flex;
+    align-items: center; /* Centra verticalmente los items */
+    padding-bottom: 1em;
+}
+
+.campo-send label {
+    width: 120px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.campo-send input {
+    width: 90%;
+    font-size: 14px;
+}
+
+
+.campo-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5em;
+    gap: 1em;
+}
+
+.campo-button button {
+    background-color: #d62429;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 8px 0px;
+    color: #fff;
+    border: none;
+    min-width: 120px;
+    max-width: 120px;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 1;
+    font-size: 14px;
+    height: 30px; /* Altura base */
+}
+
+/* Estilos para el botón deshabilitado */
+.campo-button button:disabled {
+    background-color: #ccc;  /* Gris claro */
+    color: #666;              /* Gris oscuro */
+    cursor: not-allowed;     /* Cambiar el cursor */
+    opacity: 0.6;          /* Reducir la opacidad */
+  }
+  
+  .campo-button button:disabled:hover {
+    background-color: #ccc; /* Mantiene el gris claro al pasar el cursor */
+  }
+
+button:hover {
+    background-color: #660000;
+}
+
+.respuesta {
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: white; /* Establece el fondo blanco */
+    padding: 10px; /* Añade un poco de espacio alrededor del texto (opcional) */
+    margin-bottom: 0.5em;
+    border-radius: 5px; /* Redondea las esquinas (opcional) */
+  
+  }
+  
+  .respuesta p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .campo-check {
+    display: flex;
+    align-items: center; /* Centra verticalmente los items */
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+}
+
+.campo-check p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+.campo-check input {
+    margin-right: 1rem;
+}
+
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .encabezado h2 {
+        font-size: 0.8rem;
+    }
+}
